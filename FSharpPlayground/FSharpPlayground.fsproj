@@ -9,6 +9,8 @@
     <None Include="1. Why Use FSharp\Lesson3.fsx" />
     <None Include="1. Why Use FSharp\Lesson4.fsx" />
     <None Include="1. Why Use FSharp\Lesson5.fsx" />
+    <None Include="1. Why Use FSharp\Lesson6.fsx" />
+    <None Include="1. Why Use FSharp\Lesson7.fsx" />
     <Compile Include="Library.fs" />
   </ItemGroup>
 

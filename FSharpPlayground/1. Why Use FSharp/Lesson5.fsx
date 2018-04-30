@@ -15,6 +15,28 @@ let myCallback (reader:StreamReader) url =
     printfn "Downloaded %s. First 100 is %s" url html100
 
 
-//let google = fetchUrl myCallback "http://www.google.com"
 
-//let fetch
+let fetchUrl2 = fetchUrl myCallback
+
+let google = fetchUrl2 "http://www.google.com"
+let bbc = fetchUrl2 "http://www.bbc.co.uk"
+
+
+let simpleFunction anotherFunction inputParam = 
+    let concatval = "Input: " + inputParam
+    anotherFunction concatval
+
+let chainFunction inputParam = 
+    let chainresult = "Nested: " + inputParam
+    chainresult
+
+
+let x = simpleFunction chainFunction "eoin"
+
+
+let s2 = simpleFunction chainFunction
+
+
+let sites = ["eoin"; "ronan"; "elaine"]
+
+sites |> List.map s2
